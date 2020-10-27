@@ -1,0 +1,54 @@
+<%- include("header") -%>
+
+<!-- Intro Section --->
+<section id="intro-section">
+    <div class="container">
+
+      <div class="row text-center">
+        <div class="col-md-6">
+          <h2 class="title"><i class="fa fa-eye" aria-hidden="true"></i>  Dive into the history</h2>
+          <br>
+          <p class="intro-text">See the famous events, births and deaths happended on a given date</p>
+        </div>
+
+        <div class="col-md-6">
+            <form class="dataForm" action="/" method="post">
+              <input type="Number" name="getDate" placeholder= "Enter Date" class="dateInput">
+              <div class="dropdownMonths">
+                     <select name= "monthSelected">
+                       <option selected>Select Month</option>
+                       <option value="1">January</option>
+                       <option value="2">February</option>
+                       <option value="3">March</option>
+                       <option value="4">April</option>
+                       <option value="5">May</option>
+                       <option value="6">June</option>
+                       <option value="7">July</option>
+                       <option value="8">August</option>
+                       <option value="9">September</option>
+                       <option value="10">October</option>
+                       <option value="11">November</option>
+                       <option value="12">December</option>
+                   </select>
+              </div>
+
+              <button type="submit" name="search-btn" class="btn btn-primary btn-lg">Search <i class="fa fa-search" aria-hidden="true"></i></button>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+      <img src="https://dental.hiilite.com/wp-content/uploads/2019/06/Hiilite_Dental_Marketing_White-Wave-Bottom-01-1.png" alt="waveImage" class="bottom-img">
+
+</section>
+
+
+<%- include("mainTemplate") -%>
+
+
+
+
+
+
+<%- include("footer") -%>

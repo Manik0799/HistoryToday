@@ -1,0 +1,201 @@
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* --------------NavBar Section----------------- */
+.navbar{
+  background: #654ea3;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+nav .navbar-brand{
+  color: black;
+  font-size: 1.6em;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fa-book{
+  margin-right: 10px;
+  padding: 5px;
+}
+
+nav li a{
+  margin-left: 5em;
+  color: black;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+  float: right;
+}
+.navbar-toggler{
+  color: black;
+}
+
+nav li a, nav li a:hover{
+  color: black;
+}
+
+nav li a:after {
+	content: '';
+	display: block;
+	margin: auto;
+	height: 3px;
+	width: 0px;
+	background: transparent;
+	transition: width .5s ease, white .5s ease;
+}
+nav li a:hover:after {
+	width: 100%;
+	background: white;
+}
+
+/* -------------------------Navbar section ends------------------------------ */
+
+/* -------------------------Intro Section------------------------------------- */
+#intro-section{
+  padding-top: 100px;
+  background: #654ea3;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#intro-section .title{
+  font-size: 46px;
+  font-weight: 500;
+}
+#intro-section .intro-text{
+  font-size: 24px;
+  font-weight: 350;
+}
+
+#intro-section .dataForm{
+  margin-top: 10px;
+}
+
+#intro-section .dateInput{
+  height: 50px;
+  width: 45%;
+  padding: auto;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#intro-section select{
+  height: 50px;
+  width: 45%;
+  padding: auto;
+  border-radius: 5px;
+  text-align: center;
+}
+#intro-section button{
+  margin-top: 20px;
+}
+
+.bottom-img{
+  width: 100%;
+  padding-top: 25px;
+}
+/* -----------------Intro section ends----------------------- */
+
+/* ------------------About today section begins---------------- */
+#aboutToday .titleText{
+  font-size: 42px;
+  font-weight: 450;
+  margin-top: 15px;
+
+}
+
+.headingText{
+  font-size: 32px;
+  font-weight: 250;
+  margin-left: 20px;
+  margin-top: 50px;
+}
+
+#aboutToday .datacards{
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  width: 230px;
+  height: 250px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-image: url("https://images.unsplash.com/photo-1435527173128-983b87201f4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1347&q=80");
+
+  color: black;
+}
+
+.flip-card-front h1{
+  margin-top: 25%;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background: #F0C27B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4B1248, #F0C27B);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4B1248, #F0C27B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p{
+  margin-top: 10px;
+}
+
+
+/* next set of cads */
+#aboutToday .card{
+  width: 10.5rem;
+  color: white;
+
+background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+}

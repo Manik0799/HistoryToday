@@ -1,0 +1,116 @@
+
+<!------------------- About the day Section ----------------->
+
+<section id="aboutToday">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+          <h2 class="titleText"><i class="fa fa-calendar" aria-hidden="true"></i>  About <%= dateData.date %></h2>
+    </div>
+  </div>
+
+
+<!----------------------- Events happened ----------------->
+  <div class="container-fluid headings">
+    <!-- Heading -->
+    <div class="row">
+      <div class="col-sm-12">
+        <h2 class="headingText"> <i class="fa fa-map" aria-hidden="true"></i> Events</h2>
+      </div>
+    </div>
+  </div>
+    <!-- Main Data -->
+    <div class="container-fluid">
+      <div class="row">
+
+        <% for(let i= (dateData.data.Events.length)-1; i>=(dateData.data.Events.length)-15; i--){ %>
+
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <div class="flip-card datacards">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h1 class="card-text"><%= dateData.data.Events[i].year %></h1>
+                </div>
+                <div class="flip-card-back">
+                  <p><%= dateData.data.Events[i].text %></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <% } %>
+
+    </div>
+  </div>
+
+
+  <!-- -----------------------Births  ---------------------->
+  <section id="births">
+
+    <div class="container-fluid headings">
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="headingText"> <i class="fa fa-birthday-cake" aria-hidden="true"></i> Births</h2>
+        </div>
+      </div>
+    </div>
+      <!-- Main Data -->
+      <div class="container-fluid mt-3">
+        <div class="row ">
+
+          <% for(let i= (dateData.data.Events.length)-1; i>=(dateData.data.Events.length)-10; i--){ %>
+
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4  ml-3">
+            <div class="card mt-2" >
+              <div class="card-body" >
+                <h3 class="card-title"><%= dateData.data.Births[i].year %></h3>
+                <p class="card-text"><%= dateData.data.Births[i].text %></p>
+              </div>
+            </div>
+          </div>
+
+          <% } %>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- -----------------------Deaths  ---------------------->
+  <section id="deaths">
+
+    <div class="container-fluid headings">
+      <!-- Heading -->
+      <div class="row">
+        <div class="col-sm-12">
+          <h2 class="headingText"> <i class="fa fa-dot-circle-o" aria-hidden="true"></i> Deaths</h2>
+        </div>
+      </div>
+    </div>
+      <!-- Main Data -->
+      <div class="container-fluid mt-3">
+        <div class="row ">
+
+          <% for(let i= (dateData.data.Events.length)-1; i>=(dateData.data.Events.length)-10; i--){ %>
+
+          <div class="col-lg-2 col-md-3 col-sm-3 col-xs-4  ml-3">
+            <div class="card mt-2" >
+              <div class="card-body" >
+                <h3 class="card-title"><%= dateData.data.Deaths[i].year %></h3>
+                <p class="card-text"><%= dateData.data.Deaths[i].text %></p>
+              </div>
+            </div>
+          </div>
+
+          <% } %>
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+</section>
